@@ -17,29 +17,7 @@ $("#widgetLink").each(function() {
                     } : {}
                 }).text(s(e.text, n)).prop("outerHTML").replace(/([\n])/ig, "<br/>") + (n ? "" : "<br/>")
             }).join("")
-        },
-        u = function() {
-            $.get(i + "/user/api/l/", {}, function(t) {
-                r && r.remove();
-                if (t.bl && t.bl.map) r = $("<div>" + t.bl.map(function(e) {
-                        var t = $(n);
-                        return t.find(".title_l").append(o(e.t, !0)), e.a ? t.find(".title_r a").text(e.a.text).attr("href", i + e.a.href) : t.find(".title_r").remove(), t.find(".body").append(o(e.l, !1)), t.prop("outerHTML")
-                    }).join("")), r.insertAfter(e);
-                else if (t.t) {
-                    r = $(n), r.find(".title_l").text(t.t).attr("href", i + t.th), r.find(".title_r a").text(t.a).attr("href", i + t.ah), !t.tc || r.find(".title_l").css("color", t.tc), t.a || r.find(".title_r"), r.insertAfter(e);
-                    var s = r.find(".body"),
-                        u;
-                    t.ll && t.ll.map(function(e) {
-                        $("<a>", {
-                            text: e.text,
-                            href: i + e.href,
-                            target: "_blank"
-                        }).appendTo(s).wrapAll("<p></p>")
-                    })
-                }
-            }, "json"), setTimeout(u, 1e5)
         };
-    u()
 }), ! function(e, t) {
     if (!e.chk) {
         var n = function(e) {

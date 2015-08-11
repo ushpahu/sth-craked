@@ -4,7 +4,7 @@
    },
    "browser_action": {
       "default_icon": "ico/19.png",
-      "default_title": "steam trader helper V2"
+      "default_title": "cracked steam trader helper V2"
    },
    "content_scripts": [ {
       "all_frames": true,
