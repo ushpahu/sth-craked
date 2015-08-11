@@ -24,7 +24,7 @@
    "manifest_version": 2,
    "name": "Cracked Steam Trader Helper",
    "permissions": [ "http://steamcommunity.com/*", "http://*.steamcommunity.com/*", "https://steamcommunity.com/*", "https://*.steamcommunity.com/*", "http://steamtraderhelper.com/*", "http://*.steamtraderhelper.com/*", "https://steamtraderhelper.com/*", "https://*.steamtraderhelper.com/*", "https://steamdb.info/api/*", "http://steamdb.info/api/*", "notifications", "cookies", "tabs", "browsingData" ],
-   "short_name": "S.T.H.",
+   "short_name": "C.S.T.H.",
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "2.0.2.6",
    "web_accessible_resources": [ "ico/19.png", "site/kakashka.png", "site/inventory.js" ]
