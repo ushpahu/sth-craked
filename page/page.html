@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>STH</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="css/page.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="row">
+	<div class="col left">
+		<div class="head">
+			<span class="head-m ib" id="lTop"></span>
+			<div class="pyInfo noAuth"><a href="http://steamtraderhelper.com/user/order/" class="green">To operate additional functions need to login and pay for a subscription >></a></div>
+			<div class="pyInfo subscription">Subscription > <i class="green">Days left: <i class="cnt"></i></i> (<a href="http://steamtraderhelper.com/user/order/">Renew</a>)</div>
+			<div class="pyInfo noSubscription">Subscription > <a href="http://steamtraderhelper.com/user/order/" class="green">Pay Now</a></div>
+		</div>
+		<div class="tools">
+			<table class="t-h" cellpadding="0"><thead>
+				<th class="thl">
+					<span class="thl-ch">
+						<i class="checkbox">
+							<input type="checkbox" id="chAll"/>
+							<i></i>
+						</i>
+					</span>
+					<span class="thl-t">Item name 
+						<div class="ib lbS"><div><i class="reSort" data-t="n"></i></div><div><i class="sort" data-t="n"></i></div>
+						</div>
+					</span>
+				</th>
+				<th class="w_inp"><span>Price</span></th>
+				<th class="thb w_inp"><span>Count</span></th>
+				<th class="thb w_inp"><span>Budget <div class="ib lbS"><div><i class="reSort" data-t="b"></i></div><div><i class="sort" data-t="b"></i></div></span></th>
+				<th class="thb w_on"></th>
+				<th class="ths w_inp pay"><span>You receive <div class="ib lbS"><div><i class="reSort" data-t="s"></i></div><div><i class="sort" data-t="s"></i></div></span></th>
+				<th class="ths w_inp pay"><span>Buyer pays</span></th>
+				<th class="ths w_on pay"></th>
+			</thead></table>
+			<i class="start-p">
+				<i class="ico start" id="str"></i>
+			</i>
+		</div>
+		<div class="t-s">
+			<table class="t-b" cellpadding="0" id="Group">
+				<script id="group" type="text/html"><tbody >
+				  <tr class="pay grp grp_{{open}} type_{{type}}" id="gr_{{id}}" data-id="{{id}}">
+					  <td><div class="grp-td">
+							<i class="open"></i><i class="close"></i>
+							
+							<i class="checkbox"><input type="checkbox" class="chkGroup" data-id="{{id}}"/><i></i></i>
+							<i class="grp-t"><input value="{{name}}" class="grp-inp "/></i>
+							<i class="grp-col"></i>
+							<i class="grp-col-sel"><i class="col_0"></i><i class="col_1"></i><i class="col_2"></i><i class="col_3"></i><i class="col_4"></i><i class="col_5"></i><i class="col_6"></i><i class="col_7"></i><i class="col_8"></i><i class="col_9"></i><i class="col_10"></i><i class="col_11"></i><i class="col_12"></i><i class="col_13"></i><i class="col_14"></i><i class="col_15"></i><i class="col_16"></i><i class="col_17"></i></i>
+					  </div></td>
+					  <td class="w_inp gr_count_"></td>
+					  <td class="w_inp"></td>
+					  <td class="w_inp"></td>
+					  <td class="thb w_on gr_count_b_"></td>
+					  <td class="w_inp"></td>
+					  <td class="w_inp"></td>
+					  <td class="ths w_on gr_count_s_"></td>
+				  </tr>
+				</tbody></script>
+			</table>
+			<table class="t-b" cellpadding="0"><tbody id="Inventars">
+				<script id="item" type="text/html">
+					<tr class="r_{{id}} item" id="item_{{id}}" data-id="{{id}}">
+					  <td><div class="item_div">
+							  <i class="move"><i class="sort move-down"></i><i class="reSort move-up"></i></i>
+						  <i class="checkbox grad"><input type="checkbox" class="chkItem" id="chI_{{id}}" data-id="{{id}}" {{checked}}/><i></i></i>
+						  <span class="span l"><nobr><a  target="_blank" href="{{url}}">{{name}}</a></nobr>
+						  </span>
+						</div></td>
+					  <td class="w_inp"><span class="span Prise" data-url="{{priseUrl}}" data-id="{{id}}"></span></td>
+					  
+					  <td class="thb w_inp"><input class="inp b_Count"  value="{{b_cnt}}" data-id="{{id}}"/></td>
+					  <td class="thb w_inp"><input class="inp b_Budget" value="{{Budget}}" data-id="{{id}}"/></td>
+						<td class="thb w_on"><i class="onoff"><input type="checkbox" class="b_on" data-id="{{id}}" {{b_chack}}/><i></i></i></td>
+
+					  <td class="ths w_inp pay"><input class="inp s_Receive" value="{{Receive}}" data-id="{{id}}"/></td>
+					  <td class="ths w_inp pay"><input class="inp s_Pays" value="{{Pays}}"  onchange="onP(this)"/></td>
+						<td class="ths w_on pay"><i class="onoff"><input type="checkbox" class="s_on edit"  data-id="{{id}}" {{s_chack}}/><i></i></i></td>
+				  </tr>
+				</script>
+			</tbody></table>
+	</div></div>
+	
+	<div class="col right">
+		
+		<div class="head">
+			<div class="cont r">
+				<a target="_blank" href="http://steamtraderhelper.com/user/" id="lSTH">login</a>
+			</div>
+		</div>
+		<div class="tools">
+			<div class="cont" id="balance"></div>
+		</div>
+		<div class="cont" id="Widgets">
+
+			<script id="widgetSteam" type="text/html">
+				<div class="widget_steam">
+					<div class="title">Steam Community Status</div>
+					<div class="body">
+						<p><a target="_blank" href="{{href}}">{{name}}</a></p>
+						<p><a target="_blank" href="https://steamstat.us/">Service status:</a> <i class="status"></i> </p>
+
+						<a target="_blank" href="{{href}}" class="ico login_ico login_ico_{{isLogin}}"></a>
+					</div>
+				</div>
+			</script>
+
+			<script id="widgetTools" type="text/html">
+				<div class="widget_tools">
+					<div class="title">Tools <i class="doMin"></i></div>
+					<div class="body">
+						<p>
+						<i class="ib w255"><input class="inp l" id="AddUrl_text" placeholder="Add items URL"/></i><i class="ico icoAddUrl" id="AddUrl"></i>
+						</p>
+
+						<div>
+							<table><tr>
+									<td class="w1">Backup List:</td><td class="w1 alignR"><i class="btn" id="wExport"><i>Save</i></i><i class="btn {{loadDisabled}}" id="wImport"><i>Load</i></i></td>
+							</tr></table>
+						</div>
+					</div>
+				</div>
+			</script>
+
+			<script id="widgetHistory1" type="text/html">
+				<div class="widget_tools ">
+					<div class="title">History <i class="doMin"></i></div>
+					<div class="body"></div>
+				</div>
+			</script>
+			
+			
+			<link rel="import" href="options.html" id="widgetOptions">
+			
+			<link rel="import" href="link.html" id="widgetLink">
+			
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="footer-l">
+		<div class="footer-ln">
+		select items: <span id="chCnt">0</span>
+		<table id="chTab" class="tabCh">
+			<tr>
+				<td class="w_btn">
+					<i class="ico pay group" id="chGrp"></i>
+					<i class="ico pay ungroup" id="chUGrp"></i>
+					<i class="ico del" id="chDel"></i>
+				</td>
+				<td class="thb w_inp"><input class="inp" id="chBCnt"/></td>
+				<td class="thb w_inp"><input class="inp" id="chBSum"/></td>
+				  <td class="thb w_on"><i class="ico b_on" id="chBOn"></i><i class="ico b_off" id="chBOff"></i></td>
+
+
+				<td class="ths w_inp pay"><input class="inp inpLeft" placeholder="Fix" id="chSSum"/><input class="inp inpRight" placeholder="%" id="chSSumProc"/></td>
+				<td class="ths w_inp pay"><input class="inp" id="chSSumR"/></td>
+				  <td class="ths w_on pay"><i class="ico s_on" id="chSOn"></i><i class="ico s_off" id="chSOff"></i></td>
+			</tr>
+		</table>
+		</div>
+		<div class="footer-ln" id="stat"></div>
+	</div>
+</div>
+		<div id="falert">This Text</div>
+<script type="text/javascript" src="../lib/jq.js"></script>
+<script type="text/javascript" src="../lib/lib.js"></script>
+<script type="text/javascript" src="../lib/db.js"></script>
+<script type="text/javascript" src="page.js"></script>
+
+</body>
+</html>

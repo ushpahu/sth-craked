@@ -1,0 +1,85 @@
+	/* BASE */
+	
+#searchResultsRows .market_listing_row_link.steamtraderhelper{
+	position:relative;
+}
+
+#searchResultsRows .market_listing_row_link.steamtraderhelper .sth_link.sthb{
+	position: absolute;
+	top: -63px;left: 409px;
+}
+
+/*----------*/
+
+.sth_link{
+	display: inline-block;
+	height: 24px;
+	width:24px;
+	}
+.sth_link.sthb{
+	background-image: url(data:image/png;base64,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);
+}
+.sth_link:hover{
+	background-position-x:-24px}
+.sth_link.activ{
+	background-position-x:-48px}
+	
+.steamtraderhelper_inventory{
+	position:relative}
+.steamtraderhelper_inventory .sthb{
+	position:absolute;
+	top:0;
+	left: 110%}
+	
+	
+#inventories .disabled{
+	display: none;
+}
+	
+	
+#inventories{
+	overflow:auto;
+}
+	#inventories::-webkit-scrollbar {
+		margin:3px;height:9px;width:9px;
+		background: #545454;
+		-webkit-border-radius: 4ex;
+		-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,.75);
+		background:-webkit-gradient(linear, left, right, color-stop(0%,#5c5c5c), color-stop(100%,#808080));
+	}
+	#inventories::-webkit-scrollbar-thumb {
+		background:#393812;width:9px;
+		background:-webkit-gradient(linear, left, right, color-stop(100%,#a3a3a3), color-stop(0%,#c4c4c4) );
+		background:-webkit-linear-gradient(45deg, #c4c4c4 0%,#a3a3a3 100%); 
+		-webkit-border-radius:4ex;
+		-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.75);
+	}
+
+	#inventories::-webkit-scrollbar-corner {
+		background:#000;background:#399892;
+	}
+
+.STH_itemHolder_group{
+	position: relative;/*
+	width: 98px;
+	height: 98px;
+	float: left;
+	margin:0 4px 4px 0;*/
+}
+.STH_itemHolder_group .item{
+	position: absolute !important;
+	top:0;
+	left: 0;
+}
+.STH_itemHolder_group .item img{
+	position: relative;
+	z-index: 1;
+}
+
+.STH_itemHolder_group_cnt{
+	position: absolute;
+	z-index: 20;
+	background: #ccc;
+	padding: 5px;
+	border-radius: 0 0 15px 0;
+}

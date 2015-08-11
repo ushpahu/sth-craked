@@ -1,0 +1,31 @@
+{
+   "background": {
+      "scripts": [ "lib/jq.js", "lib/lib.js", "lib/db.js", "lib/sth.js", "lib/sthb.js", "lib/sths.js", "background.js", "nomin.js" ]
+   },
+   "browser_action": {
+      "default_icon": "ico/19.png",
+      "default_title": "steam trader helper V2"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "site/site.css" ],
+      "js": [ "lib/jq.js", "site/script.js" ],
+      "matches": [ "http://steamcommunity.com/*", "http://*.steamcommunity.com/*", "https://steamcommunity.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en",
+   "description": "This extension will help you to get the items at a good price and facilitate the work on the Steam Community Market.",
+   "icons": {
+      "128": "ico/128.png",
+      "48": "ico/48.png",
+      "p": "ico/19.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3fB1DKcfqPYdCh2oI4hGY9/CgeYMH/t5rziL5m3ziPyr9XqWiqgOhd63Qucn8L8UkeyY/4xx0/mkV6bXfdTeRIBRLj71xVAFs+K4HKJA4MeKHb1x/gcXv8Ubq77uRDH2n1M5wKHrCpTTQykDv3GzW+SSYdA13En0ewcOVWa6D3WvZ2cYU2xVhuwmazn9HqeISompxVBMAZg7U9jRaT3lqVCL33KvIS9GlaJ+zljYX2iRllZYDuxkgcte+bVr/3V/uWtczqJc7msKttUjx10A+nXaB7FVpzNmfPS1C9V3uZ6Mix69ojf22LQumY6+PnW239bNPFxSGG+eHaR2UVR/SwIDAQAB",
+   "manifest_version": 2,
+   "name": "Steam Trader Helper",
+   "permissions": [ "http://steamcommunity.com/*", "http://*.steamcommunity.com/*", "https://steamcommunity.com/*", "https://*.steamcommunity.com/*", "http://steamtraderhelper.com/*", "http://*.steamtraderhelper.com/*", "https://steamtraderhelper.com/*", "https://*.steamtraderhelper.com/*", "https://steamdb.info/api/*", "http://steamdb.info/api/*", "notifications", "cookies", "tabs", "browsingData" ],
+   "short_name": "S.T.H.",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.2.6",
+   "web_accessible_resources": [ "ico/19.png", "site/kakashka.png", "site/inventory.js" ]
+}
