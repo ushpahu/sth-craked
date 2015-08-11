@@ -22,7 +22,7 @@
    },
    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3fB1DKcfqPYdCh2oI4hGY9/CgeYMH/t5rziL5m3ziPyr9XqWiqgOhd63Qucn8L8UkeyY/4xx0/mkV6bXfdTeRIBRLj71xVAFs+K4HKJA4MeKHb1x/gcXv8Ubq77uRDH2n1M5wKHrCpTTQykDv3GzW+SSYdA13En0ewcOVWa6D3WvZ2cYU2xVhuwmazn9HqeISompxVBMAZg7U9jRaT3lqVCL33KvIS9GlaJ+zljYX2iRllZYDuxkgcte+bVr/3V/uWtczqJc7msKttUjx10A+nXaB7FVpzNmfPS1C9V3uZ6Mix69ojf22LQumY6+PnW239bNPFxSGG+eHaR2UVR/SwIDAQAB",
    "manifest_version": 2,
-   "name": "Steam Trader Helper",
+   "name": "Cracked Steam Trader Helper",
    "permissions": [ "http://steamcommunity.com/*", "http://*.steamcommunity.com/*", "https://steamcommunity.com/*", "https://*.steamcommunity.com/*", "http://steamtraderhelper.com/*", "http://*.steamtraderhelper.com/*", "https://steamtraderhelper.com/*", "https://*.steamtraderhelper.com/*", "https://steamdb.info/api/*", "http://steamdb.info/api/*", "notifications", "cookies", "tabs", "browsingData" ],
    "short_name": "S.T.H.",
    "update_url": "https://clients2.google.com/service/update2/crx",
